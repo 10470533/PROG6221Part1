@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "gEhNQBxv+R0=",
+  "dgSpecHash": "FY0CB5z1vGA=",
   "success": true,
   "projectFilePath": "C:\\Users\\lab_services_student\\source\\repos\\ST10470533_POE1\\ST10470533_POE1\\ST10470533_POE1.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\lab_services_student\\.nuget\\packages\\figgle\\0.6.6\\figgle.0.6.6.nupkg.sha512",
+    "C:\\Users\\lab_services_student\\.nuget\\packages\\figgle.fonts\\0.6.6\\figgle.fonts.0.6.6.nupkg.sha512",
     "C:\\Users\\lab_services_student\\.nuget\\packages\\system.windows.extensions\\10.0.5\\system.windows.extensions.10.0.5.nupkg.sha512"
   ],
   "logs": []
