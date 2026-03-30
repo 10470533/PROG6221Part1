@@ -24,5 +24,38 @@ namespace ST10470533_POE1
             return name;
 
         }
+        //This method handles user questions and prepares answers.
+        public void BasicResponse()
+        {
+            string user;
+
+            //  Keyword groups
+            string[][] keywords =
+            {
+                new string[] { "how are you", "how are you doing" },
+                new string[] { "purpose", "what do you do", "what is your purpose" },
+                new string[] { "phishing", "scam", "fake email" },
+                new string[] { "strong password", "create password", "password strength" },
+                new string[] { "public wifi", "wifi safe", "public network" },
+                new string[] { "two factor", "2fa", "authentication" },
+                new string[] { "https" },
+                new string[] { "password stolen", "hacked" }
+            };
+
+            // Corresponding answers (same order)
+            string[] answers =
+            {
+                "I'm a cybersecurity bot, always ready to help!",
+                "My purpose is to educate users about cybersecurity.",
+                "Phishing is a scam where attackers trick you into giving personal info.",
+                "Use uppercase, lowercase, numbers, and symbols to create a strong password.",
+                "Public WiFi is risky because hackers can intercept your data.",
+                "Two-factor authentication adds an extra layer of security.",
+                "HTTPS encrypts your data and makes websites more secure.",
+                "If your password is stolen, change it immediately and enable 2FA."
+            };
+        }
+
     }
+
 }
