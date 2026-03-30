@@ -54,6 +54,34 @@ namespace ST10470533_POE1
                 "HTTPS encrypts your data and makes websites more secure.",
                 "If your password is stolen, change it immediately and enable 2FA."
             };
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            // Display a formatted title banner for the chatbot
+            Console.WriteLine("****************************************");
+            Console.WriteLine("*      CYBERSECURITY CHATBOT           *");
+            Console.WriteLine("****************************************");
+
+            Console.WriteLine("");
+
+            Console.ResetColor();
+
+            // Display a loading message to simulate initialization
+            Console.Write("Loading");
+
+            Thread.Sleep(300);
+
+            Console.Write(".");
+
+            Thread.Sleep(300);
+
+            Console.Write(".");
+
+            Thread.Sleep(300);
+
+            Console.WriteLine(".");
+
+            Thread.Sleep(500);
         }
 
     }
