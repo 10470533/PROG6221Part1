@@ -83,7 +83,7 @@ namespace ST10470533_POE1
 
             Thread.Sleep(500);
 
-            // Call the Details() method to get and store the user's name
+            // Call the Details() method to store the user's name
             string names = Details();
 
             // while loop to keep the chatbot running until the user exits
