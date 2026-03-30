@@ -158,7 +158,7 @@ namespace ST10470533_POE1
             string rsp = name + ", I didn't quite understand that. Could you rephrase?";
 
             // Return the rsp response
-            return rsp;
+            //return rsp;
         }
 
     }
