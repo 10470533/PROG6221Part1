@@ -82,6 +82,63 @@ namespace ST10470533_POE1
             Console.WriteLine(".");
 
             Thread.Sleep(500);
+
+            // Call the Details() method to get and store the user's name
+            string names = Details();
+
+            // while loop to keep the chatbot running until the user exits
+            while (true)
+            {
+               
+                Console.ForegroundColor = ConsoleColor.Yellow;
+
+                // Display chatbot header
+                Console.WriteLine("\n--------------------------------------------\n");
+                Console.WriteLine("****************************************");
+                Console.WriteLine("*     ASK A CYBERSECURITY QUESTION     *");
+                Console.WriteLine("****************************************");
+                Console.WriteLine("");
+
+                // Instruction for the user on how to exit the chatbot
+                Console.WriteLine("Type 'exit' to quit.");
+
+              
+                Console.Write("\nYou: ");
+
+                
+                user = Console.ReadLine().ToLower();
+
+                // Check if the user wants to exit the chatbot
+                if (user.Contains("exit"))
+                {
+                    Console.WriteLine("\nBot: Goodbye!");
+
+                  
+                    break;
+                }
+
+                // Get the chatbot response based on user input, keywords, and stored name
+              //  string response = GetResponse(user, keywords, answers, names);
+
+                // Display a typing/loading animation before showing the bot response
+              
+                Console.Write("Bot is responding");
+                Thread.Sleep(300);
+                Console.Write(".");
+                Thread.Sleep(300);
+                Console.Write(".");
+                Thread.Sleep(300);
+                Console.WriteLine(".");
+
+                
+                Thread.Sleep(400);
+
+                // Display the chatbot's response
+                Console.WriteLine("Bot: " + response);
+
+             
+                Console.ResetColor();
+            }
         }
 
     }
