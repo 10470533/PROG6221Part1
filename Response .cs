@@ -118,7 +118,7 @@ namespace ST10470533_POE1
                 }
 
                 // Get the chatbot response based on user input, keywords, and stored name
-              //  string response = GetResponse(user, keywords, answers, names);
+               string response = GetResponse(user, keywords, answers, names);
 
                 // Display a typing/loading animation before showing the bot response
               
@@ -158,7 +158,7 @@ namespace ST10470533_POE1
             string rsp = name + ", I didn't quite understand that. Could you rephrase?";
 
             // Return the rsp response
-            //return rsp;
+             return rsp;
         }
 
     }
