@@ -83,7 +83,7 @@ namespace ST10470533_POE1
 
             Thread.Sleep(500);
 
-            // Call the Details() method to store the user's name
+            // Call the Details() method to get and store the user's name
             string names = Details();
 
             // while loop to keep the chatbot running until the user exits
@@ -139,6 +139,26 @@ namespace ST10470533_POE1
              
                 Console.ResetColor();
             }
+        }
+
+        // Method that finds the correct response based on user input
+        static string GetResponse(string input, string[][] keywords, string[] answers, string name)
+        {
+            // Loop through each group of keywords
+            for (int i = 0; i < keywords.Length; i++)
+            {
+                // Check if any keyword in the current group exists in the user's input
+                if (Array.Exists(keywords[i], word => input.Contains(word)))
+                {
+                    // If a match is found, return the corresponding answer
+                    return name + ", " + answers[i];
+                }
+            }
+
+            string rsp = name + ", I didn't quite understand that. Could you rephrase?";
+
+            // Return the rsp response
+            return rsp;
         }
 
     }
