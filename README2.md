@@ -2,7 +2,6 @@
 
 This project is a console-based cybersecurity chatbot developed in C#.
 The chatbot is designed to educate users about basic cybersecurity concepts such as phishing, strong passwords, safe browsing, and online safety practices.
-
 It interacts with users through a simple text interface, provides instant responses using keyword matching, and includes audio and visual enhancements for a better user experience.
 
 ## Features
