@@ -19,7 +19,7 @@ namespace ST10470533_POE1
 
             while (true)
             {
-                Console.Write("Enter your name: ");
+                Console.Write("Please enter your name: ");
                 name = Console.ReadLine();
 
                 if (string.IsNullOrWhiteSpace(name) || int.TryParse(name, out _))
