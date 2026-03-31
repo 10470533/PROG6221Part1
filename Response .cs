@@ -17,12 +17,21 @@ namespace ST10470533_POE1
             Console.WriteLine("****************************************");
             Console.ResetColor();
 
-            Console.Write("Enter your name:");
-            name = Console.ReadLine();
-            Console.WriteLine($"Welcome, {name}!");
+            while (true)
+            {
+                Console.Write("Enter your name: ");
+                name = Console.ReadLine();
 
-            return name;
-
+                if (string.IsNullOrWhiteSpace(name) || int.TryParse(name, out _))
+                {
+                    Console.WriteLine("Please enter a valid name (not empty or numbers).");
+                }
+                else
+                {
+                    Console.WriteLine($"Welcome, {name}!");
+                    return name; //  exit loop once valid
+                }
+            }
         }
         //This method handles user questions and prepares answers.
         public void BasicResponse()
@@ -162,5 +171,6 @@ namespace ST10470533_POE1
         }
 
     }
+    //Troelsen, A. and Japikse, P., 2022. Pro C# 10 with .NET 6: Foundational principles and practices in programming. 11th ed. Berkeley, CA: Apress.
 
 }
